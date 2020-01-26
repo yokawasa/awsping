@@ -1,6 +1,6 @@
 # awsping
 
-[![GitHub Actions](https://github.com/yokawasa/awsping/workflows/VS%20Code%20extension%20CI/badge.svg)](https://github.com/yokawasa/awsping/actions)
+[![GitHub Actions](https://github.com/yokawasa/awsping/workflows/Upload%20Release%20Asset/badge.svg)](https://github.com/yokawasa/awsping/actions)
 
 awsping is a command line tools that reports median latency to
 Amazon Web Services regions. It is a fork of [gcping](https://github.com/GoogleCloudPlatform/gcping).
@@ -82,4 +82,4 @@ git tag -a v0.0.1 -m "Version awsping-v0.0.1"
 git push --tags
 ```
 
-See [the workflow]() for the detail
+See [the workflow](.github/workflows/release.yml) for the detail
