@@ -39,14 +39,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ['linux-arm64', 'windows-arm64', 'darwin-arm64']
+        version: ['linux-amd64', 'windows-amd64', 'darwin-amd64']
         include:
-          - version: linux-arm64
+          - version: linux-amd64
             OS: linux
-            ARCH: arm64
-          - version: windows-arm64
+            ARCH: amd64
+          - version: windows-amd64
             OS: windows
-            ARCH: arm64
+            ARCH: amd64
           - version: darwin-amd64
             OS: darwin
             ARCH: amd64

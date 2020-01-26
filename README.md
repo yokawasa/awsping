@@ -1,5 +1,7 @@
 # awsping
 
+[![GitHub Actions](https://github.com/yokawasa/awsping/workflows/VS%20Code%20extension%20CI/badge.svg)](https://github.com/yokawasa/awsping/actions)
+
 awsping is a command line tools that reports median latency to
 Amazon Web Services regions. It is a fork of [gcping](https://github.com/GoogleCloudPlatform/gcping).
 
@@ -68,3 +70,16 @@ bin
 └── awsping_windows_amd64
 ```
 
+## GitHub Actions Release Workflow
+
+By your pushing tag, GitHub trigger the GitHub Actions Release workflow where
+- The project is checkout and build in multi-SO & Architecture
+- Release each artifact to release URL in the repository
+
+This is how you trigger the workflow
+```
+git tag -a v0.0.1 -m "Version awsping-v0.0.1"
+git push --tags
+```
+
+See [the workflow]() for the detail
