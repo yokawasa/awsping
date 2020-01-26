@@ -19,7 +19,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          draft: true
+          draft: false
           prerelease: false
       # Any variables can not be shared between jobs, thus copy the URL 
       # of the created Github release into a file as an artifact
