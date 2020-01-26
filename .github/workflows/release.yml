@@ -27,12 +27,12 @@ jobs:
         env:
           RELEASE_URL: ${{ steps.create-release.outputs.upload_url }}
         run: |
-          echo "${RELEASE_URL}" > release_url.txt
+          echo "${RELEASE_URL}" > release-url.txt
       - name: Upload Release URL file
         uses: actions/upload-artifact@v1
         with:
           name: release-url
-          path: release_url.txt
+          path: release-url.txt
 
   release-assets:
     name: Release assets
