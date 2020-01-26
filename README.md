@@ -45,20 +45,23 @@ $ awsping
 
 ## Installation
 
-* Linux 64-bit: https://awspingrelease.s3-ap-northeast-1.amazonaws.com/awsping_linux_amd64
-  ```
-  $ curl https://awspingrelease.s3-ap-northeast-1.amazonaws.com/awsping_linux_amd64 > awsping && chmod +x awsping
-  ```
-* Mac 64-bit: https://awspingrelease.s3-ap-northeast-1.amazonaws.com/awsping_darwin_amd64
-  ```
-  $ curl https://awspingrelease.s3-ap-northeast-1.amazonaws.com/awsping_darwin_amd64 > awsping && chmod +x awsping
-  ```
+Download right binary (ie, your OS & Arch ) from release URL
+- https://github.com/yokawasa/awsping/releases
 
-* Windows 64-bit: https://awspingrelease.s3-ap-northeast-1.amazonaws.com/awsping_windows_amd64
+```sh
+# Linux 64-bit: Download awsping_linux_amd64.zip
+mv awsping_linux_amd64 awsping && chmod +x awsping
+
+# Mac 64-bit: Download awsping_darwin_amd64.zip
+mv awsping_darwin_amd64 awsping && chmod +x awsping
+
+# Windows 64-bit: Download awsping_windows_amd64.zip
+mv awsping_windows_amd64 awsping && chmod +x awsping
+```
 
 Or, you can always build the binary from the source code like this:
 
-```
+```sh
 $ git clone https://github.com/yokawasa/awsping.git
 $ cd awsping
 $ make
