@@ -1,6 +1,7 @@
 # awsping
 
-[![GitHub Actions](https://github.com/yokawasa/awsping/workflows/Upload%20Release%20Asset/badge.svg)](https://github.com/yokawasa/awsping/actions)
+[![GitHub Actions](https://github.com/yokawasa/awsping/workflows/Upload%20Release%20Asset/badge.svg)](https://github.com/yokawasa/awsping/actions) [![Go Report Card](https://goreportcard.com/badge/github.com/yokawasa/awsping)](https://goreportcard.com/report/github.com/yokawasa/awsping) [![GoDoc](https://godoc.org/github.com/yokawasa/awsping?status.svg)](https://godoc.org/github.com/yokawasa/awsping)
+
 
 awsping is a command line tools that reports median latency to
 Amazon Web Services regions. It is a fork of [gcping](https://github.com/GoogleCloudPlatform/gcping).
