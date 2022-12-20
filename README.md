@@ -74,6 +74,42 @@ bin
 └── awsping_windows_amd64
 ```
 
+## Run with Docker
+
+```
+git clone git@github.com:yokawasa/awsping.git
+cd awsping
+
+# Build an image for awsping
+docker build -t awsping .
+
+# Run a container from the image
+docker run awsping
+```
+
+An expected output would be like this
+
+```
+docker run awsping
+
+ 1.  [ap-northeast-1]  64.78122ms
+ 2.  [ap-northeast-2]  120.090306ms
+ 3.  [ap-southeast-1]  196.696755ms
+ 4.  [ap-southeast-2]  270.307861ms
+ 5.  [us-west-1]       282.509427ms
+ 6.  [us-west-2]       288.904962ms
+ 7.  [ap-south-1]      304.264519ms
+ 8.  [ca-central-1]    387.60596ms
+ 9.  [us-east-2]       403.486606ms
+10.  [eu-west-2]       519.859119ms
+11.  [eu-west-3]       538.331689ms
+12.  [eu-west-1]       540.284261ms
+13.  [eu-north-1]      559.508794ms
+14.  [eu-central-1]    563.902069ms
+15.  [sa-east-1]       618.09713ms
+```
+
+
 ## GitHub Actions Release Workflow
 
 By your pushing tag, GitHub trigger the GitHub Actions Release workflow where
